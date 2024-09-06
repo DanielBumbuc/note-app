@@ -1,0 +1,12 @@
+.btn-note {
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff;
+    transition: background-color 1s ease 1ms;
+}
+
+.btn-note:hover {
+    background-color: #AB8DE9;
+    color: white;
+}

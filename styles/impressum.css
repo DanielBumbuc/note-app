@@ -1,0 +1,14 @@
+.impressum-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+}
+
+.impressum_container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

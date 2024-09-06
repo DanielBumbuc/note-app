@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizblock</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/nav_footer.css">
+    <link rel="stylesheet" href="./styles/button.css">
+    <script src="./scripts/template.js"></script>
+    <script src="./script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo-2067396_640.png">
+</head>
+
+<body onload="init()">
+
+
+    <nav>
+        <div class="nav-content">
+            <a href="./index.html" class="logo-text"><img class="nav-logo" src="./assets/img/logo-2067396_640.png"
+                    alt="logo">NotizBlock</a>
+            <div class="menu">
+                <a onclick="showNote()" href="#"><img src="./assets/icon/icons8-notepad-50.png" alt="icon"></a>
+                <a onclick="showTrashNote()" href="#"><img src="./assets/icon/icons8-trash-can-50 (w).png" alt=""></a>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="main-section">
+
+        <h1 id="headline">Deine persönlichen Notizen</h1>
+        <form name="myForm">
+            <label>Titel:
+                <input id="title_input" type="text" name="input" required>
+            </label>
+            <br>
+            <label>Notiz:
+                <input id="note_input" type="text" name="input" required></input>
+            </label>
+
+            <div class="form-btn">
+                <button class="btn-note" onclick="addNote()">Notiz hinzufügen</button>
+            </div>
+            
+        </form>
+
+
+        <div class="notes">
+
+            <div id="my_notes">
+                <h2>Meine Notizen</h2>
+                <div id="content"></div>
+            </div>
+            <div id="my_trash_notes" class="d-none">
+                <h2>Mein Papierkorb</h2>
+                <div id="trash_content"></div>
+            </div>
+
+            <span class="fill"></span>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <a href="./index.html" class="logo-text"><img class="footer-logo"
+                    src="./assets/img/logo-2067396_640.png">NotizBlock</a>
+            
+            <p>Icons by <a class="icons-link" href="https://icons8.com/">Icons8</a></p>
+            <div class="footer-info">
+                <a class="link-style" href="./impressum.html">Impressum</a>
+                <p>|</p>
+                <a class="link-style" href="./datenschutz.html">Datenschutz</a>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
